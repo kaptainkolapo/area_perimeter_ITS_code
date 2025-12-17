@@ -1,0 +1,724 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kolapoyusuf/ontologies/2025/11/untitled-ontology-5/"
+     xml:base="http://www.semanticweb.org/kolapoyusuf/ontologies/2025/11/untitled-ontology-5/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:area_perimeter_ontology="http://www.example.org/area_perimeter_ontology#">
+    <owl:Ontology rdf:about="http://www.example.org/area_perimeter_ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#addressesMisconception -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/area_perimeter_ontology#addressesMisconception">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Feedback"/>
+        <rdfs:range rdf:resource="http://www.example.org/area_perimeter_ontology#Misconception"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#attemptedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/area_perimeter_ontology#attemptedBy">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Attempt"/>
+        <rdfs:range rdf:resource="http://www.example.org/area_perimeter_ontology#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#concernsExercise -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/area_perimeter_ontology#concernsExercise">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Attempt"/>
+        <rdfs:range rdf:resource="http://www.example.org/area_perimeter_ontology#Exercise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#feedbackForShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/area_perimeter_ontology#feedbackForShape">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Feedback"/>
+        <rdfs:range rdf:resource="http://www.example.org/area_perimeter_ontology#Shape"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#feedbackForTask -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/area_perimeter_ontology#feedbackForTask">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Feedback"/>
+        <rdfs:range rdf:resource="http://www.example.org/area_perimeter_ontology#TaskType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#generatesFeedback -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/area_perimeter_ontology#generatesFeedback">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Attempt"/>
+        <rdfs:range rdf:resource="http://www.example.org/area_perimeter_ontology#Feedback"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#hasAreaFormula -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/area_perimeter_ontology#hasAreaFormula">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Shape"/>
+        <rdfs:range rdf:resource="http://www.example.org/area_perimeter_ontology#AreaFormula"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#hasExercise -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/area_perimeter_ontology#hasExercise">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Shape"/>
+        <rdfs:range rdf:resource="http://www.example.org/area_perimeter_ontology#Exercise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#hasPerimeterFormula -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/area_perimeter_ontology#hasPerimeterFormula">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Shape"/>
+        <rdfs:range rdf:resource="http://www.example.org/area_perimeter_ontology#PerimeterFormula"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#isAboutShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/area_perimeter_ontology#isAboutShape">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Exercise"/>
+        <rdfs:range rdf:resource="http://www.example.org/area_perimeter_ontology#Shape"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#hasBase -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/area_perimeter_ontology#hasBase">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Exercise"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#hasCorrectAnswer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/area_perimeter_ontology#hasCorrectAnswer">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Exercise"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/area_perimeter_ontology#hasDescription">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Exercise"/>
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Formula"/>
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Misconception"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#hasDifficulty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/area_perimeter_ontology#hasDifficulty">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Exercise"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#hasHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/area_perimeter_ontology#hasHeight">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Exercise"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#hasLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/area_perimeter_ontology#hasLength">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Exercise"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#hasRadius -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/area_perimeter_ontology#hasRadius">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Exercise"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#hasScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/area_perimeter_ontology#hasScore">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Attempt"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#hasStudentAnswer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/area_perimeter_ontology#hasStudentAnswer">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Attempt"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#hasText -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/area_perimeter_ontology#hasText">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Feedback"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#hasWidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/area_perimeter_ontology#hasWidth">
+        <rdfs:domain rdf:resource="http://www.example.org/area_perimeter_ontology#Exercise"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#AreaFormula -->
+
+    <owl:Class rdf:about="http://www.example.org/area_perimeter_ontology#AreaFormula">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/area_perimeter_ontology#Formula"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#Attempt -->
+
+    <owl:Class rdf:about="http://www.example.org/area_perimeter_ontology#Attempt"/>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#Circle -->
+
+    <owl:Class rdf:about="http://www.example.org/area_perimeter_ontology#Circle">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/area_perimeter_ontology#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#Exercise -->
+
+    <owl:Class rdf:about="http://www.example.org/area_perimeter_ontology#Exercise"/>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#Feedback -->
+
+    <owl:Class rdf:about="http://www.example.org/area_perimeter_ontology#Feedback"/>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#Formula -->
+
+    <owl:Class rdf:about="http://www.example.org/area_perimeter_ontology#Formula"/>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#Misconception -->
+
+    <owl:Class rdf:about="http://www.example.org/area_perimeter_ontology#Misconception"/>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#PerimeterFormula -->
+
+    <owl:Class rdf:about="http://www.example.org/area_perimeter_ontology#PerimeterFormula">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/area_perimeter_ontology#Formula"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#Rectangle -->
+
+    <owl:Class rdf:about="http://www.example.org/area_perimeter_ontology#Rectangle">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/area_perimeter_ontology#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#Shape -->
+
+    <owl:Class rdf:about="http://www.example.org/area_perimeter_ontology#Shape"/>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#Square -->
+
+    <owl:Class rdf:about="http://www.example.org/area_perimeter_ontology#Square">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/area_perimeter_ontology#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#Student -->
+
+    <owl:Class rdf:about="http://www.example.org/area_perimeter_ontology#Student"/>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#TaskType -->
+
+    <owl:Class rdf:about="http://www.example.org/area_perimeter_ontology#TaskType"/>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#Triangle -->
+
+    <owl:Class rdf:about="http://www.example.org/area_perimeter_ontology#Triangle">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/area_perimeter_ontology#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#Unit -->
+
+    <owl:Class rdf:about="http://www.example.org/area_perimeter_ontology#Unit"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#AreaTask -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#AreaTask">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#TaskType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#Attempt1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#Attempt1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Attempt"/>
+        <area_perimeter_ontology:attemptedBy rdf:resource="http://www.example.org/area_perimeter_ontology#Student1"/>
+        <area_perimeter_ontology:concernsExercise rdf:resource="http://www.example.org/area_perimeter_ontology#RectangleExercise1"/>
+        <area_perimeter_ontology:generatesFeedback rdf:resource="http://www.example.org/area_perimeter_ontology#RectangleFeedback1"/>
+        <area_perimeter_ontology:hasScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</area_perimeter_ontology:hasScore>
+        <area_perimeter_ontology:hasStudentAnswer rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18</area_perimeter_ontology:hasStudentAnswer>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#CircleAreaFeedback1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#CircleAreaFeedback1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Feedback"/>
+        <area_perimeter_ontology:addressesMisconception rdf:resource="http://www.example.org/area_perimeter_ontology#CircleAreaMisconception1"/>
+        <area_perimeter_ontology:feedbackForShape rdf:resource="http://www.example.org/area_perimeter_ontology#CircleShape"/>
+        <area_perimeter_ontology:feedbackForTask rdf:resource="http://www.example.org/area_perimeter_ontology#AreaTask"/>
+        <area_perimeter_ontology:hasText>The area of a circle is Area = π × r². Remember to square the radius.</area_perimeter_ontology:hasText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#CircleAreaFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#CircleAreaFormula">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#AreaFormula"/>
+        <area_perimeter_ontology:hasDescription>Area = π × radius²</area_perimeter_ontology:hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#CircleAreaMisconception1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#CircleAreaMisconception1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Misconception"/>
+        <area_perimeter_ontology:hasDescription>Student may be confusing circle area with circumference or forgetting to square the radius.</area_perimeter_ontology:hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#CircleExercise1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#CircleExercise1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Exercise"/>
+        <area_perimeter_ontology:hasCorrectAnswer rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">153.94</area_perimeter_ontology:hasCorrectAnswer>
+        <area_perimeter_ontology:hasDescription>Find the area of a circle with radius 7.</area_perimeter_ontology:hasDescription>
+        <area_perimeter_ontology:hasDifficulty>Medium</area_perimeter_ontology:hasDifficulty>
+        <area_perimeter_ontology:hasRadius rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</area_perimeter_ontology:hasRadius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#CirclePerimeterFeedback1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#CirclePerimeterFeedback1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Feedback"/>
+        <area_perimeter_ontology:addressesMisconception rdf:resource="http://www.example.org/area_perimeter_ontology#CirclePerimeterMisconception1"/>
+        <area_perimeter_ontology:feedbackForShape rdf:resource="http://www.example.org/area_perimeter_ontology#CircleShape"/>
+        <area_perimeter_ontology:feedbackForTask rdf:resource="http://www.example.org/area_perimeter_ontology#PerimeterTask"/>
+        <area_perimeter_ontology:hasText>The circumference (perimeter) of a circle is Perimeter = 2 × π × r.</area_perimeter_ontology:hasText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#CirclePerimeterFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#CirclePerimeterFormula">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#PerimeterFormula"/>
+        <area_perimeter_ontology:hasDescription>Perimeter = 2 × π × radius</area_perimeter_ontology:hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#CirclePerimeterMisconception1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#CirclePerimeterMisconception1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Misconception"/>
+        <area_perimeter_ontology:hasDescription>Student may be confusing circle circumference with area or using πr² instead of 2πr.</area_perimeter_ontology:hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#CircleShape -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#CircleShape">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Circle"/>
+        <area_perimeter_ontology:hasAreaFormula rdf:resource="http://www.example.org/area_perimeter_ontology#CircleAreaFormula"/>
+        <area_perimeter_ontology:hasExercise rdf:resource="http://www.example.org/area_perimeter_ontology#CircleExercise1"/>
+        <area_perimeter_ontology:hasPerimeterFormula rdf:resource="http://www.example.org/area_perimeter_ontology#CirclePerimeterFormula"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#PerimeterTask -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#PerimeterTask">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#TaskType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#RectangleAreaFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#RectangleAreaFormula">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#AreaFormula"/>
+        <area_perimeter_ontology:hasDescription>Area = length × width</area_perimeter_ontology:hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#RectangleAreaMisconception1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#RectangleAreaMisconception1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Misconception"/>
+        <area_perimeter_ontology:hasDescription>Student did not correctly apply the area formula for a rectangle.</area_perimeter_ontology:hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#RectangleExercise1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#RectangleExercise1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Exercise"/>
+        <area_perimeter_ontology:hasCorrectAnswer rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</area_perimeter_ontology:hasCorrectAnswer>
+        <area_perimeter_ontology:hasDescription>Find the area of a rectangle with length 5 and width 4.</area_perimeter_ontology:hasDescription>
+        <area_perimeter_ontology:hasDifficulty>Easy</area_perimeter_ontology:hasDifficulty>
+        <area_perimeter_ontology:hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</area_perimeter_ontology:hasLength>
+        <area_perimeter_ontology:hasWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</area_perimeter_ontology:hasWidth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#RectangleFeedback1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#RectangleFeedback1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Feedback"/>
+        <area_perimeter_ontology:addressesMisconception rdf:resource="http://www.example.org/area_perimeter_ontology#RectangleAreaMisconception1"/>
+        <area_perimeter_ontology:feedbackForShape rdf:resource="http://www.example.org/area_perimeter_ontology#RectangleShape"/>
+        <area_perimeter_ontology:feedbackForTask rdf:resource="http://www.example.org/area_perimeter_ontology#AreaTask"/>
+        <area_perimeter_ontology:hasText>Remember, the area of a rectangle is found by multiplying its length by its width.</area_perimeter_ontology:hasText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#RectanglePerimeterFeedback1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#RectanglePerimeterFeedback1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Feedback"/>
+        <area_perimeter_ontology:addressesMisconception rdf:resource="http://www.example.org/area_perimeter_ontology#RectanglePerimeterMisconception1"/>
+        <area_perimeter_ontology:feedbackForShape rdf:resource="http://www.example.org/area_perimeter_ontology#RectangleShape"/>
+        <area_perimeter_ontology:feedbackForTask rdf:resource="http://www.example.org/area_perimeter_ontology#PerimeterTask"/>
+        <area_perimeter_ontology:hasText>The perimeter of a rectangle is calculated using Perimeter = 2 × (length + width).</area_perimeter_ontology:hasText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#RectanglePerimeterFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#RectanglePerimeterFormula">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#PerimeterFormula"/>
+        <area_perimeter_ontology:hasDescription>Perimeter = 2 × (length + width)</area_perimeter_ontology:hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#RectanglePerimeterMisconception1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#RectanglePerimeterMisconception1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Misconception"/>
+        <area_perimeter_ontology:hasDescription>Student may be forgetting to add all sides or confusing rectangle perimeter with area.</area_perimeter_ontology:hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#RectangleShape -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#RectangleShape">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Rectangle"/>
+        <area_perimeter_ontology:hasAreaFormula rdf:resource="http://www.example.org/area_perimeter_ontology#RectangleAreaFormula"/>
+        <area_perimeter_ontology:hasExercise rdf:resource="http://www.example.org/area_perimeter_ontology#RectangleExercise1"/>
+        <area_perimeter_ontology:hasPerimeterFormula rdf:resource="http://www.example.org/area_perimeter_ontology#RectanglePerimeterFormula"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#SquareAreaFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#SquareAreaFormula">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#AreaFormula"/>
+        <area_perimeter_ontology:hasDescription>Area = side × side</area_perimeter_ontology:hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#SquareExercise1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#SquareExercise1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Exercise"/>
+        <area_perimeter_ontology:hasCorrectAnswer rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36</area_perimeter_ontology:hasCorrectAnswer>
+        <area_perimeter_ontology:hasDescription>Find the area of a square with side 6.</area_perimeter_ontology:hasDescription>
+        <area_perimeter_ontology:hasDifficulty>Easy</area_perimeter_ontology:hasDifficulty>
+        <area_perimeter_ontology:hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</area_perimeter_ontology:hasLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#SquareFeedback1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#SquareFeedback1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Feedback"/>
+        <area_perimeter_ontology:addressesMisconception rdf:resource="http://www.example.org/area_perimeter_ontology#SquareMisconception1"/>
+        <area_perimeter_ontology:feedbackForShape rdf:resource="http://www.example.org/area_perimeter_ontology#SquareShape"/>
+        <area_perimeter_ontology:feedbackForTask rdf:resource="http://www.example.org/area_perimeter_ontology#AreaTask"/>
+        <area_perimeter_ontology:hasText>For a square: Area = side × side, and Perimeter = 4 × side. Make sure you choose the correct one.</area_perimeter_ontology:hasText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#SquareMisconception1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#SquareMisconception1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Misconception"/>
+        <area_perimeter_ontology:hasDescription>Student may be using the wrong formula for square area or perimeter.</area_perimeter_ontology:hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#SquarePerimeterFeedback1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#SquarePerimeterFeedback1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Feedback"/>
+        <area_perimeter_ontology:addressesMisconception rdf:resource="http://www.example.org/area_perimeter_ontology#SquarePerimeterMisconception1"/>
+        <area_perimeter_ontology:feedbackForShape rdf:resource="http://www.example.org/area_perimeter_ontology#SquareShape"/>
+        <area_perimeter_ontology:feedbackForTask rdf:resource="http://www.example.org/area_perimeter_ontology#PerimeterTask"/>
+        <area_perimeter_ontology:hasText>The perimeter of a square is found by adding all four sides: Perimeter = 4 × side.</area_perimeter_ontology:hasText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#SquarePerimeterFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#SquarePerimeterFormula">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#PerimeterFormula"/>
+        <area_perimeter_ontology:hasDescription>Perimeter = 4 × side</area_perimeter_ontology:hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#SquarePerimeterMisconception1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#SquarePerimeterMisconception1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Misconception"/>
+        <area_perimeter_ontology:hasDescription>Student may be confusing square perimeter with square area or not multiplying all sides.</area_perimeter_ontology:hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#SquareShape -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#SquareShape">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Square"/>
+        <area_perimeter_ontology:hasAreaFormula rdf:resource="http://www.example.org/area_perimeter_ontology#SquareAreaFormula"/>
+        <area_perimeter_ontology:hasExercise rdf:resource="http://www.example.org/area_perimeter_ontology#SquareExercise1"/>
+        <area_perimeter_ontology:hasPerimeterFormula rdf:resource="http://www.example.org/area_perimeter_ontology#SquarePerimeterFormula"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#Student1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#Student1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Student"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#TriangleAreaFeedback1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#TriangleAreaFeedback1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Feedback"/>
+        <area_perimeter_ontology:addressesMisconception rdf:resource="http://www.example.org/area_perimeter_ontology#TriangleAreaMisconception1"/>
+        <area_perimeter_ontology:feedbackForShape rdf:resource="http://www.example.org/area_perimeter_ontology#TriangleShape"/>
+        <area_perimeter_ontology:feedbackForTask rdf:resource="http://www.example.org/area_perimeter_ontology#AreaTask"/>
+        <area_perimeter_ontology:hasText>The area of a triangle is Area = (base × height) ÷ 2. Make sure you divide by 2.</area_perimeter_ontology:hasText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#TriangleAreaFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#TriangleAreaFormula">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#AreaFormula"/>
+        <area_perimeter_ontology:hasDescription>Area = ½ × base × height</area_perimeter_ontology:hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#TriangleAreaMisconception1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#TriangleAreaMisconception1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Misconception"/>
+        <area_perimeter_ontology:hasDescription>Student may be forgetting to divide by 2 when calculating triangle area or using the wrong dimensions.</area_perimeter_ontology:hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#TriangleExercise1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#TriangleExercise1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Exercise"/>
+        <area_perimeter_ontology:hasBase rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</area_perimeter_ontology:hasBase>
+        <area_perimeter_ontology:hasCorrectAnswer rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</area_perimeter_ontology:hasCorrectAnswer>
+        <area_perimeter_ontology:hasDescription>Find the area of a triangle with base 8 and height 5.</area_perimeter_ontology:hasDescription>
+        <area_perimeter_ontology:hasDifficulty>Medium</area_perimeter_ontology:hasDifficulty>
+        <area_perimeter_ontology:hasHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</area_perimeter_ontology:hasHeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#TrianglePerimeterFeedback1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#TrianglePerimeterFeedback1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Feedback"/>
+        <area_perimeter_ontology:addressesMisconception rdf:resource="http://www.example.org/area_perimeter_ontology#TrianglePerimeterMisconception1"/>
+        <area_perimeter_ontology:feedbackForShape rdf:resource="http://www.example.org/area_perimeter_ontology#TriangleShape"/>
+        <area_perimeter_ontology:feedbackForTask rdf:resource="http://www.example.org/area_perimeter_ontology#PerimeterTask"/>
+        <area_perimeter_ontology:hasText>The perimeter of a triangle is found by adding all three sides together.</area_perimeter_ontology:hasText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#TrianglePerimeterFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#TrianglePerimeterFormula">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#PerimeterFormula"/>
+        <area_perimeter_ontology:hasDescription>Perimeter = side1 + side2 + side3</area_perimeter_ontology:hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#TrianglePerimeterMisconception1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#TrianglePerimeterMisconception1">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Misconception"/>
+        <area_perimeter_ontology:hasDescription>Student may be adding only two sides of the triangle or confusing perimeter with area.</area_perimeter_ontology:hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/area_perimeter_ontology#TriangleShape -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/area_perimeter_ontology#TriangleShape">
+        <rdf:type rdf:resource="http://www.example.org/area_perimeter_ontology#Triangle"/>
+        <area_perimeter_ontology:hasAreaFormula rdf:resource="http://www.example.org/area_perimeter_ontology#TriangleAreaFormula"/>
+        <area_perimeter_ontology:hasExercise rdf:resource="http://www.example.org/area_perimeter_ontology#TriangleExercise1"/>
+        <area_perimeter_ontology:hasPerimeterFormula rdf:resource="http://www.example.org/area_perimeter_ontology#TrianglePerimeterFormula"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
